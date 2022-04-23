@@ -331,8 +331,8 @@
           .top .minlog .logo img {
             width: 39px; } }
   .top .search {
-    margin-top: 14px;
-    padding: 0 13% 0 9%; }
+    margin-top: 20px;
+    padding: 0 100% 0 9%; }
     @media (max-width: 767px) {
       .top .search {
         display: none; } }

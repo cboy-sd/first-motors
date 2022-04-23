@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
+{% include 'header.html'%}
 
 <head>
-
     <!-- Title Page -->
-    <title>First Motors | Home</title>
+    <title>First Motors home page </title>
     <!-- Required Meta Tags -->
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    {% load static %}
-    <link rel="icon" type="image/png" href="{% static 'img/logo.png' %}">
+    <link rel="icon" type="image/png" href="img/logo.png">
     <!-- file css project -->
     <!-- Include Bootstrap4 File -->
-    <link rel="stylesheet" href="{% static 'css/_bootstrap.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/_bootstrap.min.css'%}">
     <link rel="stylesheet" href="{% static 'css/_bootstrap-rtl.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/_hover-min.css' %}">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
 </head>
@@ -123,48 +123,7 @@
             <span>9+</span>
         </div>
     </section>
-    <section class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="#"><img class="wow fadeIn" data-wow-duration="0.8s"
-                                                              data-wow-delay="0s" src="img/logo.png" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="46" height="23"
-                                 viewBox="0 0 46 23">
-                                <rect id="Rectangle_2" data-name="Rectangle 2" width="46" height="4" rx="2"
-                                      fill="#444343"/>
-                                <rect id="Rectangle_3" data-name="Rectangle 3" width="21" height="4" rx="2"
-                                      transform="translate(5 10)" fill="#f94d4e"/>
-                                <rect id="Rectangle_4" data-name="Rectangle 4" width="19" height="4" rx="2"
-                                      transform="translate(0 19)" fill="#444343"/>
-                            </svg>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav ml-auto">
-                                <a class="active nav-link wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
-                                   href="#">الرئيسية <span class="sr-only">(current)</span></a>
-                                <a class="nav-link wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.3s" href="#">عن
-                                    الشركة</a>
-                                <a class="nav-link wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s" href="#">الخدمات</a>
-                                <a class="nav-link wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s" href="#">المنتجات</a>
-                                <a class="nav-link wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.6s" href="#">التعدين</a>
-                                <a class="nav-link wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.7s" href="#">تواصل
-                                    معنا</a>
-                                <div class="contenu wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.8s">
-                                    <img src="img/login.png" alt="">
-                                    <h3>دخـول</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!--bxshow-->
     <section class="bxshow">
         <div class="container-fluid">
@@ -177,14 +136,14 @@
                         <!--Create account-->
                         <a href="#">
                             <div class="bu create">
-                                <img src="img/create.png" alt="">
+                                <img src="{% static 'img/create.png'%}" alt="">
                                 <h2>حساب جديد</h2>
                             </div>
                         </a>
                         <!--login-->
                         <a href="#">
                             <div class="bu logiin">
-                                <img src="img/user-login.png" alt="">
+                                <img src="{% static '/static/img/user-login.png' %}" alt="">
                                 <h2>دخــــول</h2>
                             </div>
                         </a>
@@ -193,7 +152,7 @@
                 <!--bmg-->
                 <div class="col-lg-8">
                     <div class="bmg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.9s">
-                        <img src="img/gr.png" alt=""/>
+                        <img src="{% static 'img/gr.png'%}" alt=""/>
                     </div>
                 </div>
             </div>
@@ -247,9 +206,9 @@
         <!--play-->
         <div class="play">
             <!--p1-->
-            <img class="p1" src="img/play1.png" alt="">
+            <img class="p1" src="{%static 'img/play1.png'%}" alt="">
             <!--p2-->
-            <img class="p2" src="img/play2.png" alt="">
+            <img class="p2" src="{%static 'img/play2.png'%}" alt="">
         </div>
         <h2>تعرف علينا أكثر</h2>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -287,7 +246,7 @@
                                                       fill="#444343"/>
                                             </g>
                                         </svg>
-                                        <img src="img/circal.png" alt="">
+                                        <img src="{% static  'img/circal.png'%}" alt="">
                                         <span class="count" data-target="5000">0</span>
                                         <h3>عميـل</h3>
                                     </div>
@@ -309,7 +268,7 @@
                                                       fill="#444343"/>
                                             </g>
                                         </svg>
-                                        <img src="img/circal.png" alt="">
+                                        <img src="{% static 'img/circal.png' %}" alt="">
                                         <span class="count" data-target="6000">0</span>
                                         <h3>موظـف</h3>
                                     </div>
@@ -331,7 +290,7 @@
                                                       fill="#444343"/>
                                             </g>
                                         </svg>
-                                        <img src="img/circal.png" alt="">
+                                        <img src="{% static 'img/circal.png'%}" alt="">
                                         <span class="count" data-target="2000">0</span>
                                         <h3>منتج</h3>
                                     </div>
@@ -353,7 +312,7 @@
                                                       fill="#444343"/>
                                             </g>
                                         </svg>
-                                        <img src="img/circal.png" alt="">
+                                        <img src="{% static 'img/circal.png'%}" alt="">
                                         <span class="count" data-target="6000">0</span>
                                         <h3>خــدمة</h3>
                                     </div>
@@ -420,7 +379,7 @@
                                 <div class="up">
                                     <!--pts-->
                                     <div class="pts p1"><!--1-->
-                                        <img src="img/logo-sinotruk.png" alt="">
+                                        <img src="{% static  'img/logo-sinotruk.png'%}" alt="">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                              viewBox="0 0 283 243" style="enable-background:new 0 0 283 243;"
@@ -440,7 +399,7 @@
                                     </div>
                                     <!--pts-->
                                     <div class="pts p2"><!--2-->
-                                        <img src="img/Hino-logo-2048x2048.png" alt="">
+                                        <img src="{% static 'img/Hino-logo-2048x2048.png' %}" alt="">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                              viewBox="0 0 283 243" style="enable-background:new 0 0 283 243;"
@@ -456,7 +415,7 @@
                                 <div class="down">
                                     <!--pts-->
                                     <div class="pts p1"><!--2-->
-                                        <img src="img/1200px-Perkins-Logoi.png" alt="">
+                                        <img src="{% static 'img/1200px-Perkins-Logoi.png'%}" alt="">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                              viewBox="0 0 288.8 198.22" style="enable-background:new 0 0 288.8 198.22;"
@@ -477,7 +436,7 @@
                                     </div>
                                     <!--pts-->
                                     <div class="pts p2"><!--2-->
-                                        <img src="img/1280px-Doosan_logo.png" alt="">
+                                        <img src="{% static 'img/1280px-Doosan_logo.png'%}" alt="">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                              viewBox="0 0 558.96 249.3" style="enable-background:new 0 0 558.96 249.3;"
@@ -509,7 +468,7 @@
                         <div class="shw">
                             <!--bmg-->
                             <div class="bmg">
-                                <img src="img/confident-young-businessman-suit-standing-with-arms-folded.png" alt="">
+                                <img src="{% static 'img/confident-young-businessman-suit-standing-with-arms-folded.png'%}" alt="">
                             </div>
                             <!--bkg-r-->
                             <svg class="bkg-r" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -581,8 +540,8 @@
                             <!--detail-->
                             <a href="#">
                                 <div class="bu">
-                                    <img src="img/rigth-arrow.png" alt="">
-                                    <h2>التفاصيل</h2>
+                                    <img src="{% static 'img/rigth-arrow.png'% }" alt="">
+                                    <a href=""> <h2>التفاصيل</h2></a>
                                 </div>
                             </a>
                         </div>
@@ -705,26 +664,26 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <img src="img/add.png" alt="">
+                                        <img src="{% static 'img/add.png'%}" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="{%static 'img/goblack.png'%}" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -815,26 +774,26 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <img src="img/add.png" alt="">
+                                        <img src="{% static 'img/add.png'%}" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="{%static 'img/goblack.png'%}" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -854,7 +813,13 @@
 
                                         <rect class="st0" x="66.22" y="789.86" width="142.13" height="1"/>
                                         <rect class="st0" x="218.9" y="789.86" width="8.85" height="1"/>
-                                        <path class="st0"
+
+
+
+
+
+
+                                          <path class="st0"
                                               d="m237.58 790.86v-1c14.15-0.02 25.62-11.48 25.63-25.63v-10.86c-0.02-6.11 2.41-11.98 6.75-16.29l7.34-7.34c1.53-1.47 3.95-1.47 5.49 0 1.12 1.12 2.95 1.12 4.07 0l2.77-2.77c0.46-0.46 0.46-1.21 0-1.67s-1.21-0.46-1.67 0l-0.99 0.99c-1.32 1.43-3.55 1.52-4.97 0.2-1.43-1.32-1.52-3.55-0.2-4.97 0.06-0.07 0.13-0.14 0.2-0.2l6.65-6.65 0.71 0.71-6.65 6.65c-0.96 1.01-0.93 2.6 0.07 3.56 0.98 0.94 2.51 0.94 3.49 0l0.99-0.99c0.86-0.84 2.25-0.82 3.09 0.04 0.82 0.85 0.82 2.2 0 3.04l-2.77 2.77c-1.52 1.51-3.97 1.51-5.49 0-1.14-1.09-2.93-1.09-4.07 0l-7.34 7.34c-4.15 4.12-6.47 9.73-6.45 15.58v10.86c-0.04 14.7-11.95 26.61-26.65 26.63z"/>
 
 
@@ -925,26 +890,26 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <img src="img/add.png" alt="">
+                                        <img src="{%static 'img/add.png'%}" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="{% static 'img/goblack.png'%}" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1035,26 +1000,26 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <img src="img/add.png" alt="">
+                                        <img src="{% static 'img/add.png'%}" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="{% static 'img/goblack.png'%}" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1150,26 +1115,26 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <img src="img/add.png" alt="">
+                                        <img src="{% static 'img/add.png'%}" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="{% static 'img/goblack.png'%}" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1260,26 +1225,26 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <img src="img/add.png" alt="">
+                                        <img src="{% static  'img/add.png'%}" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="img/goblack.png" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1370,26 +1335,26 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <img src="img/add.png" alt="">
+                                        <img src="{% static 'img/add.png'%}" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="{% static 'img/goblack.png'%}" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1480,26 +1445,26 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <img src="img/add.png" alt="">
+                                        <img src="{% static 'img/add.png'%}" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="{% static 'img/goblack.png'%}" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1595,26 +1560,136 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <img src="img/add.png" alt="">
+                                        <img src="{% static 'img/add.png'%}" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="{% static 'img/goblack.png'%}" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="addprod">
+                                    <svg enable-background="new 0 0 338.99 245.34" version="1.1"
+                                         viewBox="0 0 338.99 245.34" xml:space="preserve"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <style type="text/css">
+                                            .st0{fill:#EDEBE9;}
+                                            .st1{fill:#D8D3CE;}
+                                            .st2{fill:none;}
+                                            .st3{fill:url(#b);}
+                                            .st4{fill:url(#a);}
+                                            .st5{fill:#444343;}
+                                        </style>
+
+                                        <rect class="st0" x="66.22" y="789.86" width="142.13" height="1"/>
+                                        <rect class="st0" x="218.9" y="789.86" width="8.85" height="1"/>
+                                        <path class="st0"
+                                              d="m237.58 790.86v-1c14.15-0.02 25.62-11.48 25.63-25.63v-10.86c-0.02-6.11 2.41-11.98 6.75-16.29l7.34-7.34c1.53-1.47 3.95-1.47 5.49 0 1.12 1.12 2.95 1.12 4.07 0l2.77-2.77c0.46-0.46 0.46-1.21 0-1.67s-1.21-0.46-1.67 0l-0.99 0.99c-1.32 1.43-3.55 1.52-4.97 0.2-1.43-1.32-1.52-3.55-0.2-4.97 0.06-0.07 0.13-0.14 0.2-0.2l6.65-6.65 0.71 0.71-6.65 6.65c-0.96 1.01-0.93 2.6 0.07 3.56 0.98 0.94 2.51 0.94 3.49 0l0.99-0.99c0.86-0.84 2.25-0.82 3.09 0.04 0.82 0.85 0.82 2.2 0 3.04l-2.77 2.77c-1.52 1.51-3.97 1.51-5.49 0-1.14-1.09-2.93-1.09-4.07 0l-7.34 7.34c-4.15 4.12-6.47 9.73-6.45 15.58v10.86c-0.04 14.7-11.95 26.61-26.65 26.63z"/>
+
+
+                                        <path class="st1"
+                                              d="m291.8 169.9v-105.17l43.63-29.08-0.02-0.03-64.07 41.64-36.16-7.36 58.73-38.86 0.14-0.09c5.8-3.84 1.89-12.92-4.92-11.56l-275.69 54.91c-7.69 1.48-13.29 8.13-13.44 15.95v155.09h337.97c-0.57-19.32-8.47-37.74-22.17-51.44l-24-24z"/>
+                                        <path class="st2" d="m337.93 33.99-2.51 1.63 0.01 0.03 2.5-1.66z"/>
+
+                                        <linearGradient id="b" x1="-995.92" x2="-995.92" y1="1889.7" y2="1888.7"
+                                                        gradientTransform="matrix(83.642 0 0 -51.19 83592 96753)"
+                                                        gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FC544C" offset="0"/>
+                                            <stop stop-color="#F03755" offset="1"/>
+                                            </linearGradient>
+                                        <path class="st3"
+                                              d="m249.39 63.51 30.18 6.14 53.47-34.75c-2.86-6.68-8.37-12.41-15.57-16.44l-68.08 45.05z"/>
+
+                                        <linearGradient id="a" x1="-1003.8" x2="-1003.8" y1="1889.1" y2="1888.1"
+                                                        gradientTransform="matrix(41.4 0 0 -161.62 41875 305352)"
+                                                        gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FC544C" offset="0"/>
+                                            <stop stop-color="#F03755" offset="1"/>
+                                            </linearGradient>
+                                        <path class="st4"
+                                              d="m336.66 40.01-39.07 26.04v94.18l41.4 41.4v-150.42c-0.01-3.85-0.8-7.66-2.33-11.2z"/>
+                                        <path class="st5"
+                                              d="m287.27 0h-0.33l-58.43 9.29c-21.83 0-40.46 10.65-47.77 25.63l107.75-23.64c6.57-1.44 5.67-11.25-1.05-11.28h-0.17z"/>
+                                        <path class="st2" d="m335.43 35.66 2.5-1.67-2.51 1.63 0.01 0.04z"/>
+                                        <path class="st5" d="m335.43 35.66-0.01-0.03 0.01 0.03z"/>
+
+                                    </svg>
+                                    <div class="addMove">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="42.244" height="44.242"
+                                             viewBox="0 0 42.244 44.242">
+                                            <g id="Group_15369" data-name="Group 15369"
+                                               transform="translate(-1689.653 -741.557)">
+                                                <g id="Group_15368" data-name="Group 15368">
+                                                    <path id="Path_16654" data-name="Path 16654"
+                                                          d="M2576.933,2416.594a.844.844,0,0,1-.544-.2,21.345,21.345,0,0,1-2.608-2.616.845.845,0,0,1,1.3-1.085,19.808,19.808,0,0,0,2.4,2.409.845.845,0,0,1-.545,1.49Z"
+                                                          transform="translate(-879.213 -1630.795)" fill="#fc544c"/>
+                                                    <path id="Path_16655" data-name="Path 16655"
+                                                          d="M2605.361,2405.871a.845.845,0,0,1-.676-1.352,19.268,19.268,0,0,0,3.87-11.638v-6.759a19.432,19.432,0,0,0-38.864,0v6.759a19.231,19.231,0,0,0,1.986,8.567c.076.155.155.31.236.464l.1.186c.184.341.376.674.578,1a.845.845,0,0,1-1.438.89q-.327-.532-.626-1.083l-.108-.2q-.133-.254-.258-.507a20.911,20.911,0,0,1-2.159-9.313v-6.759a21.122,21.122,0,1,1,42.244,0v6.759a20.949,20.949,0,0,1-4.207,12.651A.845.845,0,0,1,2605.361,2405.871Z"
+                                                          transform="translate(-878.347 -1623.443)" fill="#6c6a6a"/>
+                                                </g>
+                                                <g id="Group_11060" data-name="Group 11060"
+                                                   transform="translate(1697.457 749.215)">
+                                                    <path id="Path_14768" data-name="Path 14768"
+                                                          d="M2599.295,2382.041a.687.687,0,0,1-.687-.687h0a5.913,5.913,0,0,0-11.825,0,.687.687,0,1,1-1.374.006v-.006a7.289,7.289,0,0,1,14.579,0,.687.687,0,0,1-.687.687Z"
+                                                          transform="translate(-2578.504 -2374.065)" fill="#d8d3ce"
+                                                          stroke="#6c6a6a" stroke-width="1"/>
+                                                    <g id="Group_9179" data-name="Group 9179"
+                                                       transform="translate(0 9.224)">
+                                                        <path id="Path_14763" data-name="Path 14763"
+                                                              d="M2602.37,2384.983h-22.521a2.408,2.408,0,0,0-2.392,1.981l0,.021h27.313l0-.021A2.41,2.41,0,0,0,2602.37,2384.983Z"
+                                                              transform="translate(-2577.27 -2384.983)" fill="#a09c9a"/>
+                                                        <path id="Path_14764" data-name="Path 14764"
+                                                              d="M2604.918,2389.9c0-.206-.007-.411-.015-.616h-27.651c-.009.2-.015.41-.015.616a13.556,13.556,0,0,0,.072,1.386h27.541Q2604.918,2390.594,2604.918,2389.9Z"
+                                                              transform="translate(-2577.236 -2385.649)"
+                                                              fill="#a09c9a"/>
+                                                        <path id="Path_14765" data-name="Path 14765"
+                                                              d="M2604.709,2393.17h-27.158a13.789,13.789,0,0,0,.562,2h26.048A13.648,13.648,0,0,0,2604.709,2393.17Z"
+                                                              transform="translate(-2577.285 -2386.253)"
+                                                              fill="#a09c9a"/>
+                                                        <path id="Path_14766" data-name="Path 14766"
+                                                              d="M2579.06,2397.467l.018.033a3.722,3.722,0,0,0,3.312,1.968h17.968a3.719,3.719,0,0,0,3.32-1.98l.01-.021Z"
+                                                              transform="translate(-2577.519 -2386.919)"
+                                                              fill="#a09c9a"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <img src="{% static 'img/add.png'%}" alt="">
+                                    </div>
+                                    <img class="pic" src="{% static 'img/jrarr.png' %}" alt="">
+                                    <!--bx-->
+                                    <div class="bx">
+                                        <h2>جرافة سي بي سي الحديثة</h2>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="{% static 'img/goblack.png'%}" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1707,24 +1782,24 @@
                                         </svg>
                                         <img src="img/add.png" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="{% static 'img/goblack.png'%}" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1815,136 +1890,26 @@
                                                 </g>
                                             </g>
                                         </svg>
-                                        <img src="img/add.png" alt="">
+                                        <img src="{% static 'img/add.png'%}" alt="">
                                     </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
+                                    <img class="pic" src="{% static 'img/jrarr.png'%}" alt="">
                                     <!--bx-->
                                     <div class="bx">
                                         <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                <div class="addprod">
-                                    <svg enable-background="new 0 0 338.99 245.34" version="1.1"
-                                         viewBox="0 0 338.99 245.34" xml:space="preserve"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <style type="text/css">
-                                            .st0{fill:#EDEBE9;}
-                                            .st1{fill:#D8D3CE;}
-                                            .st2{fill:none;}
-                                            .st3{fill:url(#b);}
-                                            .st4{fill:url(#a);}
-                                            .st5{fill:#444343;}
-                                        </style>
-
-                                        <rect class="st0" x="66.22" y="789.86" width="142.13" height="1"/>
-                                        <rect class="st0" x="218.9" y="789.86" width="8.85" height="1"/>
-                                        <path class="st0"
-                                              d="m237.58 790.86v-1c14.15-0.02 25.62-11.48 25.63-25.63v-10.86c-0.02-6.11 2.41-11.98 6.75-16.29l7.34-7.34c1.53-1.47 3.95-1.47 5.49 0 1.12 1.12 2.95 1.12 4.07 0l2.77-2.77c0.46-0.46 0.46-1.21 0-1.67s-1.21-0.46-1.67 0l-0.99 0.99c-1.32 1.43-3.55 1.52-4.97 0.2-1.43-1.32-1.52-3.55-0.2-4.97 0.06-0.07 0.13-0.14 0.2-0.2l6.65-6.65 0.71 0.71-6.65 6.65c-0.96 1.01-0.93 2.6 0.07 3.56 0.98 0.94 2.51 0.94 3.49 0l0.99-0.99c0.86-0.84 2.25-0.82 3.09 0.04 0.82 0.85 0.82 2.2 0 3.04l-2.77 2.77c-1.52 1.51-3.97 1.51-5.49 0-1.14-1.09-2.93-1.09-4.07 0l-7.34 7.34c-4.15 4.12-6.47 9.73-6.45 15.58v10.86c-0.04 14.7-11.95 26.61-26.65 26.63z"/>
-
-
-                                        <path class="st1"
-                                              d="m291.8 169.9v-105.17l43.63-29.08-0.02-0.03-64.07 41.64-36.16-7.36 58.73-38.86 0.14-0.09c5.8-3.84 1.89-12.92-4.92-11.56l-275.69 54.91c-7.69 1.48-13.29 8.13-13.44 15.95v155.09h337.97c-0.57-19.32-8.47-37.74-22.17-51.44l-24-24z"/>
-                                        <path class="st2" d="m337.93 33.99-2.51 1.63 0.01 0.03 2.5-1.66z"/>
-
-                                        <linearGradient id="b" x1="-995.92" x2="-995.92" y1="1889.7" y2="1888.7"
-                                                        gradientTransform="matrix(83.642 0 0 -51.19 83592 96753)"
-                                                        gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#FC544C" offset="0"/>
-                                            <stop stop-color="#F03755" offset="1"/>
-                                            </linearGradient>
-                                        <path class="st3"
-                                              d="m249.39 63.51 30.18 6.14 53.47-34.75c-2.86-6.68-8.37-12.41-15.57-16.44l-68.08 45.05z"/>
-
-                                        <linearGradient id="a" x1="-1003.8" x2="-1003.8" y1="1889.1" y2="1888.1"
-                                                        gradientTransform="matrix(41.4 0 0 -161.62 41875 305352)"
-                                                        gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#FC544C" offset="0"/>
-                                            <stop stop-color="#F03755" offset="1"/>
-                                            </linearGradient>
-                                        <path class="st4"
-                                              d="m336.66 40.01-39.07 26.04v94.18l41.4 41.4v-150.42c-0.01-3.85-0.8-7.66-2.33-11.2z"/>
-                                        <path class="st5"
-                                              d="m287.27 0h-0.33l-58.43 9.29c-21.83 0-40.46 10.65-47.77 25.63l107.75-23.64c6.57-1.44 5.67-11.25-1.05-11.28h-0.17z"/>
-                                        <path class="st2" d="m335.43 35.66 2.5-1.67-2.51 1.63 0.01 0.04z"/>
-                                        <path class="st5" d="m335.43 35.66-0.01-0.03 0.01 0.03z"/>
-
-                                    </svg>
-                                    <div class="addMove">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="42.244" height="44.242"
-                                             viewBox="0 0 42.244 44.242">
-                                            <g id="Group_15369" data-name="Group 15369"
-                                               transform="translate(-1689.653 -741.557)">
-                                                <g id="Group_15368" data-name="Group 15368">
-                                                    <path id="Path_16654" data-name="Path 16654"
-                                                          d="M2576.933,2416.594a.844.844,0,0,1-.544-.2,21.345,21.345,0,0,1-2.608-2.616.845.845,0,0,1,1.3-1.085,19.808,19.808,0,0,0,2.4,2.409.845.845,0,0,1-.545,1.49Z"
-                                                          transform="translate(-879.213 -1630.795)" fill="#fc544c"/>
-                                                    <path id="Path_16655" data-name="Path 16655"
-                                                          d="M2605.361,2405.871a.845.845,0,0,1-.676-1.352,19.268,19.268,0,0,0,3.87-11.638v-6.759a19.432,19.432,0,0,0-38.864,0v6.759a19.231,19.231,0,0,0,1.986,8.567c.076.155.155.31.236.464l.1.186c.184.341.376.674.578,1a.845.845,0,0,1-1.438.89q-.327-.532-.626-1.083l-.108-.2q-.133-.254-.258-.507a20.911,20.911,0,0,1-2.159-9.313v-6.759a21.122,21.122,0,1,1,42.244,0v6.759a20.949,20.949,0,0,1-4.207,12.651A.845.845,0,0,1,2605.361,2405.871Z"
-                                                          transform="translate(-878.347 -1623.443)" fill="#6c6a6a"/>
-                                                </g>
-                                                <g id="Group_11060" data-name="Group 11060"
-                                                   transform="translate(1697.457 749.215)">
-                                                    <path id="Path_14768" data-name="Path 14768"
-                                                          d="M2599.295,2382.041a.687.687,0,0,1-.687-.687h0a5.913,5.913,0,0,0-11.825,0,.687.687,0,1,1-1.374.006v-.006a7.289,7.289,0,0,1,14.579,0,.687.687,0,0,1-.687.687Z"
-                                                          transform="translate(-2578.504 -2374.065)" fill="#d8d3ce"
-                                                          stroke="#6c6a6a" stroke-width="1"/>
-                                                    <g id="Group_9179" data-name="Group 9179"
-                                                       transform="translate(0 9.224)">
-                                                        <path id="Path_14763" data-name="Path 14763"
-                                                              d="M2602.37,2384.983h-22.521a2.408,2.408,0,0,0-2.392,1.981l0,.021h27.313l0-.021A2.41,2.41,0,0,0,2602.37,2384.983Z"
-                                                              transform="translate(-2577.27 -2384.983)" fill="#a09c9a"/>
-                                                        <path id="Path_14764" data-name="Path 14764"
-                                                              d="M2604.918,2389.9c0-.206-.007-.411-.015-.616h-27.651c-.009.2-.015.41-.015.616a13.556,13.556,0,0,0,.072,1.386h27.541Q2604.918,2390.594,2604.918,2389.9Z"
-                                                              transform="translate(-2577.236 -2385.649)"
-                                                              fill="#a09c9a"/>
-                                                        <path id="Path_14765" data-name="Path 14765"
-                                                              d="M2604.709,2393.17h-27.158a13.789,13.789,0,0,0,.562,2h26.048A13.648,13.648,0,0,0,2604.709,2393.17Z"
-                                                              transform="translate(-2577.285 -2386.253)"
-                                                              fill="#a09c9a"/>
-                                                        <path id="Path_14766" data-name="Path 14766"
-                                                              d="M2579.06,2397.467l.018.033a3.722,3.722,0,0,0,3.312,1.968h17.968a3.719,3.719,0,0,0,3.32-1.98l.01-.021Z"
-                                                              transform="translate(-2577.519 -2386.919)"
-                                                              fill="#a09c9a"/>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <img src="img/add.png" alt="">
-                                    </div>
-                                    <img class="pic" src="img/jrarr.png" alt="">
-                                    <!--bx-->
-                                    <div class="bx">
-                                        <h2>جرافة سي بي سي الحديثة</h2>
-                                            <div class="price">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
-                                                     viewBox="0 0 175.182 26.076">
-                                                    <path id="Path_16657" data-name="Path 16657"
-                                                          d="M2495.033,3151.815H2344.927l-24.369,24.369"
-                                                          transform="translate(-2319.851 -3150.815)" fill="none"
-                                                          stroke="#6c6a6a" stroke-width="2"/>
-                                                </svg>
-                                                <h3><span>SDG</span> 9,000,000 </h3>
-                                            </div>
-                                            <div class="contenu">
-                                                <img src="img/goblack.png" alt="">
-                                                <h3>استمرار</h3>
-                                            </div>
+                                        <div class="price">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="175.182" height="26.076"
+                                                 viewBox="0 0 175.182 26.076">
+                                                <path id="Path_16657" data-name="Path 16657"
+                                                      d="M2495.033,3151.815H2344.927l-24.369,24.369"
+                                                      transform="translate(-2319.851 -3150.815)" fill="none"
+                                                      stroke="#6c6a6a" stroke-width="2"/>
+                                            </svg>
+                                            <h3><span>SDG</span> 9,000,000 </h3>
+                                        </div>
+                                        <div class="contenu">
+                                            <img src="img/goblack.png" alt="">
+                                            <h3>استمرار</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1955,7 +1920,7 @@
 
                 <!-- add more buttons-->
                 <div class="contenu">
-                    <img src="img/down.png" alt="">
+                    <img src="{% static 'img/down.png'%}" alt="">
                     <h3>المزيــد</h3>
                 </div>
             </div>
@@ -1966,16 +1931,16 @@
         <div class="container">
             <div class="row">
                 <div class="servv">
-                    <img src="img/serv.png" alt="">
+                    <img src="{% static 'img/serv.png'%}" alt="">
                     <h3>فريق العمـل</h3>
                 </div>
                 <div class="col-lg-12">
                     <div class="work">
-                        <img class="imgBag" src="img/woek.png" alt="">
+                        <img class="imgBag" src="{% static 'img/woek.png'%}" alt="">
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div class="person">
-                                    <img src="img/person2.png" alt="">
+                                    <img src="{%static 'img/person2.png'%}" alt="">
                                     <div class="car-body">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" width="237.972" height="103.186"
@@ -1999,7 +1964,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <div class="perss">
-                                    <img src="img/person1.png" alt="">
+                                    <img src="{% static 'img/person1.png'%}" alt="">
                                     <div class="car-body">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" width="487.991" height="211.597"
@@ -2023,7 +1988,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div class="person">
-                                    <img src="img/person3.png" alt="">
+                                    <img src="{% static 'img/person3.png'%}" alt="">
                                     <div class="car-body">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" width="237.972" height="103.186"
@@ -2047,7 +2012,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div class="person top">
-                                    <img src="img/person1.png" alt="">
+                                    <img src="{%static 'img/person1.png'%}" alt="">
                                     <div class="car-body">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" width="237.972" height="103.186"
@@ -2071,7 +2036,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div class="person">
-                                    <img src="img/person3.png" alt="">
+                                    <img src="{% static 'img/person3.png'%}" alt="">
                                     <div class="car-body">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" width="237.972" height="103.186"
@@ -2095,7 +2060,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div class="person">
-                                    <img src="img/person5.png" alt="">
+                                    <img src="{% static 'img/person5.png'%}" alt="">
                                     <div class="car-body">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" width="237.972" height="103.186"
@@ -2119,7 +2084,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div class="person top">
-                                    <img src="img/person4.png" alt="">
+                                    <img src="{%static 'img/person4.png'%}" alt="">
                                     <div class="car-body">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                              xmlns:xlink="http://www.w3.org/1999/xlink" width="237.972" height="103.186"
@@ -2148,57 +2113,17 @@
         </div>
     </section>
     <!--=============== Start Footer ===============-->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <img class="fott" src="img/footer.png" alt="">
-                <div class="col-lg-12">
-                    <div class="details">
-                        <span>جميع الحقوق محفوظة <img src="img/copyright.png" alt=""></span>
-                        <h3>2021</h3>
-                        <img class="logo" src="img/logofo.png" alt="">
-                        <!--social media-->
-                        <div class="social">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="221.702" height="81.084"
-                                 viewBox="0 0 221.702 81.084">
-                                <g id="Group_12282" data-name="Group 12282"
-                                   transform="translate(-1381.698 334.493) rotate(-90)">
-                                    <path id="Path_14795" data-name="Path 14795"
-                                          d="M264.115,1608.023c-.485-.643-.952-1.309-1.387-1.98-.376-.578-.741-1.181-1.087-1.79-.4-.709-.781-1.442-1.13-2.178-.368-.776-.712-1.579-1.022-2.385-.226-.589-.439-1.192-.632-1.791a34.341,34.341,0,0,1,8.43-34.955l-2.665-2.665a38.077,38.077,0,0,0-11.215,26.974,38.473,38.473,0,0,0,1.862,11.8c.214.665.45,1.333.7,1.988.344.9.726,1.786,1.134,2.648.388.817.81,1.631,1.255,2.419.383.677.79,1.346,1.207,1.988.482.743,1,1.482,1.539,2.2.677.9,1.406,1.78,2.166,2.621l2.8-2.526C265.383,1609.628,264.726,1608.833,264.115,1608.023Z"
-                                          transform="translate(0 -94.451)" fill="#444343"/>
-                                    <path id="Path_14796" data-name="Path 14796"
-                                          d="M339.172,1565.177H335.4a34.454,34.454,0,1,1-34.454-34.454l2.751-.127a38.336,38.336,0,0,0,35.472-38.126c0-20.617-15.8-38.035-34.48-38.035l-4.214-.06a34.454,34.454,0,1,1,34.454-34.454H338.7a38.223,38.223,0,1,0-38.25,38.223l4.214.06c16.662,0,30.738,15.692,30.738,34.266a34.544,34.544,0,0,1-31.925,34.363l-2.574.121a38.223,38.223,0,1,0,38.268,38.223Z"
-                                          transform="translate(-4.679)" fill="#444343"/>
-                                </g>
-                                <circle id="Ellipse_51" data-name="Ellipse 51" cx="28" cy="28" r="28"
-                                        transform="translate(83.302 9.863)" fill="#444343"/>
-                            </svg>
-                            <ul>
-                                <li class="right"><a href="#"><img src="img/whatsapp.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
-                                <li class="left"><a href="#"><img src="img/instagram.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="programer">
-                            <h3>تصميم وبرمجة</h3>
-                            <a href="#">
-                                <img src="img/alhasif.png" alt="">
-                                <h4>الحصيف العالمية</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</section>
+   </section>
+
+
+
 <!-- script File -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.nicescroll.min.js"></script>
-<script src="js/html5shiv.js"></script>
-<script src="js/main.js"></script>
-<script src="js/wow.js"></script>
+<script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<script src="{% static 'js/jquery.nicescroll.min.js'%}"></script>
+<script src="{% static 'js/html5shiv.js'%}"></script>
+<script src="{% static 'js/main.js'%}"></script>
+<script src="{% static 'js/wow.js'%}"></script>
 <script type="text/javascript">
     window.addEventListener('load', (event) => {
             var loading = document.querySelector('.web .loading');
@@ -2211,14 +2136,8 @@
             },200);
         });
 
-
-
-
-
-
-
-
 </script>
-<script src="js/backend.js"></script>
+<script src="{% static 'js/backend.js1' %}"></script>
+{% include 'footer.html'%}
 </body>
 </html>
