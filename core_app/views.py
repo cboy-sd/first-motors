@@ -7,7 +7,7 @@ def home_view(request):
 
 
 def co_details(request):
-    return render(request, "co-details.html")
+    return render(request, "About.html")
 
 
 def services(request):
@@ -31,4 +31,8 @@ def productDetails(request):
 
 
 def storyDetail(request):
-    return render(request, "story-details.html")
+    return render(request, "Story-details.html")
+
+
+def aboutView(request):
+    return render(request, "about.html")

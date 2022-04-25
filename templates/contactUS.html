@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html lang="wen">
-{% load static %}
-<head>
-    <!-- Required Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="icon" type="/static/image/png" href="img/logo.png">
-    <!-- file css project -->
-    <!-- Include Bootstrap4 File -->
-    <link rel="stylesheet" href="/static/css/_bootstrap.min.css">
-        <link rel="stylesheet" href="{% static 'css/_bootstrap-rtl.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="/static/css/_hover-min.css">
-    <link rel="stylesheet" href="/static/css/animate.css">
-
-</head>
-<body>
-    <section class="web">
-     {%include 'header.html'%}
+{% extends 'base.html'%}
+{%  block content %}
         <section class="contactUs">
             <div class="container">
                 <div class="row">
@@ -115,14 +95,5 @@
                 </div>
             </div>
         </section>
-        <!--=============== Start Footer ===============-->
-  {% include 'footer.html'%}
-    </section>
-    <!-- script File -->
-    <script src="/static/js/jquery-3.3.1.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/main.js"></script>
-    <script src="/static/js/jquery.nicescroll.min.js"></script>
-    <script src="/static/js/html5shiv.js"></script>
-</body>
-</html>
+{% endblock %}
+

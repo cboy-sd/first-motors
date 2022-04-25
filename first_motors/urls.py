@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from core_app.views import home_view, co_details, \
     services, products, mining, contactUS,  \
-    productDetails, storyDetail
+    productDetails, storyDetail, aboutView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,5 +29,6 @@ urlpatterns = [
     path('contactus/', contactUS),
     path('productDetails/', productDetails, name=''),
     path('story-detail/', storyDetail),
+    path('about/', aboutView, name='about')
 
 ]
