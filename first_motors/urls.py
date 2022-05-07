@@ -17,7 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from core_app.views import home_view, co_details, \
     services, products, mining, contactUS,  \
-    productDetails, storyDetail, aboutView
+    productDetails, storyDetail, aboutView, signup, \
+    login, activeamail, cart, verifyEmail
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,6 +32,11 @@ urlpatterns = [
     path('contactus/', contactUS),
     path('productDetails/', productDetails, name=''),
     path('story-detail/', storyDetail),
-    path('about/', aboutView, name='about')
+    path('about/', aboutView, name='about'),
+    path('signup/', signup, name='signup'),
+    path('login/', login, name="login"),
+    path('active-email/', activeamail),
+    path('cart/', cart),
+    path('verify-email/', verifyEmail)
 
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
