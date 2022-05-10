@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Team, Service, Company_Story, Dashboard, ContactUs, \
+from .models import Team,  Company_Story, Dashboard, \
     Stories, Products
 
 
@@ -16,10 +16,6 @@ class Company_StoryAdmin(admin.ModelAdmin):
     readonly_fields = ['id']
 
 
-class ServiceAdmin(admin.ModelAdmin):
-    list_display = ['service_name', 'service_info']
-    readonly_fields = ['id']
-    search_fields = ['service_name']
 
 
 class DashboardAdmin(admin.ModelAdmin):
@@ -46,9 +42,6 @@ admin.site.register(Company_Story, Company_StoryAdmin)
 
 admin.site.register(Team, TeamAdmin)
 
-admin.site.register(Service, ServiceAdmin)
-
-admin.site.register(ContactUs, ContactUsAdmin)
 
 admin.site.register(Dashboard, DashboardAdmin)
 

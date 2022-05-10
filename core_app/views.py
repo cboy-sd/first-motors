@@ -1,12 +1,14 @@
 from django.shortcuts import render
-from .models import Dashboard, Stories, Products, Team, Company_Story
+from .models import Dashboard, Stories, Products, Team
 
 
 def home_view(request):
+
     company = Dashboard.objects.get()
-    stories = Stories.objects.get()
-    products = Products.objects.all()
     team = Team.objects.filter(is_manager=False, first_member=False)
+    # stories = Stories.objects.get()
+
+
     try:
         manager = Team.objects.get(is_manager=True)
         first_member = Team.objects.get(first_member=True)
@@ -16,8 +18,8 @@ def home_view(request):
 
     context = {
         'dashboard': company,
-        'story': stories,
-        'products': products,
+        # 'story': stories,
+        # 'products': products,
         'team': team,
         'manager': manager,
         'first_member': first_member

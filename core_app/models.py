@@ -8,13 +8,6 @@ class Company_Story(models.Model):
     image = models.ImageField(upload_to="uploads/company")
 
 
-
-class Service(models.Model):
-    service_name = models.CharField(max_length=150)
-    service_info = models.CharField(max_length=255)
-    image = models.ImageField(upload_to="services/")
-
-
 class Team(models.Model):
     member_name = models.CharField(max_length=150)
     job = models.CharField(max_length=250)
@@ -28,12 +21,6 @@ class Dashboard(models.Model):
     products = models.IntegerField()
     services = models.IntegerField()
     employees = models.IntegerField()
-
-
-class ContactUs(models.Model):
-    username = models.CharField(max_length=40)
-    email = models.EmailField()
-    message = models.CharField(max_length=250)
 
 
 class Stories(models.Model):
