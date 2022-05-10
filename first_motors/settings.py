@@ -24,7 +24,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-=au5hc-&thz_y_o!t_7m$
 # SECURITY (WARNING: don't run with debug turned on in production!
 # DEBUG = str(os.environ.get('DEBUG')) == "1"
 DEBUG = True
-
+# hello
 ALLOWED_HOSTS = ['young-bastion-54121.herokuapp.com', '127.0.0.1']
 if not DEBUG:
     ALLOWED_HOSTS += [os.environ.get('ADJANGO_LLOWED_HOST')]
@@ -118,18 +118,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 MEDIA_URL = '/uploads/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'uploads'),
+)
